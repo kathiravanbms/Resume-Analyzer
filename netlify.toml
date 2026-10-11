@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# OpenCode Go proxy (must come before the SPA catch-all below).
+[[redirects]]
+  from = "/api/opencode/*"
+  to = "/.netlify/functions/opencode/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

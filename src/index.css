@@ -1,0 +1,265 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Archivo", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Ground: pale eucalyptus tint. */
+  --color-paper: #e9f2f0;
+  --color-paper-deep: #d9e9e6;
+  --color-surface: #ffffff;
+  --color-field: #e2f0ed;
+
+  --color-ink: #07201d;
+  --color-ink-soft: #2c4a46;
+  --color-muted: #557370;
+  --color-rule: #c7ded9;
+  --color-rule-strong: #98bcb6;
+
+  /* Brand: deep teal for identity surfaces and headers. */
+  --color-brand: #0b4f4a;
+  --color-brand-soft: #0f6a62;
+  --color-brand-ink: #e9f7f4;
+
+  /* Primary action: flame. */
+  --color-flame: #ff5a3c;
+  --color-flame-ink: #ffffff;
+  --color-flame-soft: #ffe3dc;
+
+  /* Marked emphasis: sun. */
+  --color-mark: #ffd23f;
+  --color-mark-ink: #241c00;
+
+  --color-pass: #16875a;
+  --color-pass-soft: #d8f0e4;
+  --color-warn: #b0720a;
+  --color-warn-soft: #fbeed6;
+  --color-fail: #d9412b;
+  --color-fail-soft: #fbe0da;
+
+  /* Interactive link teal. */
+  --color-link: #0b6f68;
+
+  /* The six scored dimensions each own a hue. */
+  --color-cat-ats: #2563eb;
+  --color-cat-impact: #7c3aed;
+  --color-cat-structure: #0891b2;
+  --color-cat-keywords: #d97706;
+  --color-cat-readability: #16a34a;
+  --color-cat-formatting: #db2777;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Browser surfaces carry the design. */
+::selection {
+  background: var(--color-mark);
+  color: var(--color-mark-ink);
+}
+
+input,
+textarea,
+select {
+  caret-color: var(--color-ink);
+}
+
+a {
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-rule-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--color-rule-strong);
+  border: 3px solid var(--color-paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* A ticked measurement scale — used by meters and readouts. */
+.meter-ticks {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--color-rule-strong) 0 1px,
+    transparent 1px 8px
+  );
+}
+
+/* The one authored moment: parsed fields decoding into view. */
+@keyframes decode {
+  from {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.decode {
+  animation: decode 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+/* Page + list entrances. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.animate-rise {
+  animation: rise 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+/* Meters grow from the origin when they mount, then track value changes. */
+@keyframes grow {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+.meter-fill {
+  transform-origin: left;
+  animation: grow 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* Colored loading shimmer. */
+@keyframes shimmer {
+  0% {
+    background-position: -420px 0;
+  }
+  100% {
+    background-position: 420px 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--color-field) 25%,
+    rgba(201, 242, 74, 0.55) 37%,
+    var(--color-field) 63%
+  );
+  background-size: 840px 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+
+@keyframes pulse-border {
+  0%,
+  100% {
+    border-color: var(--color-ink);
+  }
+  50% {
+    border-color: var(--color-mark);
+  }
+}
+
+.drag-pulse {
+  animation: pulse-border 0.9s ease-in-out infinite;
+}
+
+/* Hero illustration: a resume being scanned and parsed. */
+@keyframes scanline {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(184px);
+  }
+}
+
+.hero-scan {
+  animation: scanline 3.6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+@keyframes chipin {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+}
+
+.hero-chip {
+  animation: chipin 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-spin {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: spin-slow 11s linear infinite;
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.hero-pulse {
+  animation: pulse-soft 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .decode,
+  .animate-rise,
+  .meter-fill,
+  .shimmer,
+  .drag-pulse,
+  .hero-scan,
+  .hero-chip,
+  .hero-spin,
+  .hero-pulse {
+    animation: none;
+  }
+  * {
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+}

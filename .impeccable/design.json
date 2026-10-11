@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-03T00:00:00.000Z",
+  "title": "Design System: Resume Analyzer",
+  "extensions": {
+    "colorMeta": {
+      "mark": {
+        "role": "primary",
+        "displayName": "Sun Mark",
+        "canonical": "#ffd23f",
+        "tonalRamp": ["#4d3a00", "#7a5c00", "#a88000", "#d4a400", "#f0bd1a", "#ffd23f", "#ffe07a", "#fff3c4"]
+      },
+      "flame": {
+        "role": "primary",
+        "displayName": "Flame",
+        "canonical": "#ff5a3c",
+        "tonalRamp": ["#4d1408", "#7a2010", "#a82e18", "#d64122", "#ff5a3c", "#ff8568", "#ffb4a0", "#ffe1d9"]
+      },
+      "brand": {
+        "role": "secondary",
+        "displayName": "Deep Teal Brand",
+        "canonical": "#0b4f4a",
+        "tonalRamp": ["#062a27", "#08504a", "#0b6f68", "#0e8b82", "#14a89c", "#3fc4b8", "#8adfd6", "#d6f4ef"]
+      },
+      "mark-ink": {
+        "role": "primary",
+        "displayName": "Mark Ink",
+        "canonical": "#10130a",
+        "tonalRamp": ["#10130a", "#252c17", "#3e4826", "#5d6a3a", "#809052", "#a6b86e", "#cddc97", "#eff5cc"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Instrument Ink",
+        "canonical": "#0e1113",
+        "tonalRamp": ["#0e1113", "#1b2023", "#2c3337", "#454d52", "#646d73", "#8b949a", "#b9c1c6", "#e6eaec"]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#3c4247",
+        "tonalRamp": ["#171b1d", "#24292c", "#343a3e", "#464d52", "#5f676c", "#7d858a", "#a5acb0", "#d7dbdd"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Field Label Grey",
+        "canonical": "#6b7176",
+        "tonalRamp": ["#22262a", "#34393d", "#4a5054", "#61686c", "#7b8388", "#99a1a5", "#bcc2c6", "#e3e6e8"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "#f2f3ef",
+        "tonalRamp": ["#2f332e", "#4d5250", "#6f7472", "#949996", "#b9bdb9", "#d7dad5", "#e9ebe6", "#f2f3ef"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Sheet White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#2b2d2c", "#484b4a", "#696c6b", "#8b8e8d", "#aeb1b0", "#cfd2d1", "#e9eaea", "#ffffff"]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline Rule",
+        "canonical": "#d3d7d1",
+        "tonalRamp": ["#252823", "#3f433d", "#5b6058", "#787d75", "#979c93", "#b6bab1", "#cdd0c9", "#e9ebe6"]
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Boundary Rule",
+        "canonical": "#a9b0a8",
+        "tonalRamp": ["#1e211d", "#343834", "#4d524c", "#686e66", "#858c83", "#a2a9a0", "#c0c6bd", "#dfe3dc"]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Measured Field",
+        "canonical": "#eceee9",
+        "tonalRamp": ["#2b2e29", "#43463f", "#5d6158", "#787d72", "#949a8e", "#b1b7ab", "#cdd1c6", "#eceee9"]
+      },
+      "pass": {
+        "role": "tertiary",
+        "displayName": "Pass Green",
+        "canonical": "#0f7a4a",
+        "tonalRamp": ["#062f1c", "#0b4a2c", "#0f653d", "#14804f", "#1b9c61", "#35b87a", "#6fd0a0", "#c4e9d6"]
+      },
+      "warn": {
+        "role": "tertiary",
+        "displayName": "Marginal Amber",
+        "canonical": "#966000",
+        "tonalRamp": ["#3a2500", "#573800", "#754c00", "#936000", "#b27700", "#cf930f", "#e5b757", "#f6e2b8"]
+      },
+      "fail": {
+        "role": "tertiary",
+        "displayName": "Fail Vermilion",
+        "canonical": "#cf3218",
+        "tonalRamp": ["#4d1003", "#701a08", "#94250d", "#b72f13", "#cf3218", "#e4573b", "#ef8f7a", "#f9d3cb"]
+      },
+      "link": {
+        "role": "secondary",
+        "displayName": "Link Teal",
+        "canonical": "#0b6f68",
+        "tonalRamp": ["#062e2b", "#0a4e49", "#0b6f68", "#0e8f86", "#18b0a4", "#42c8bc", "#8adfd7", "#d6f4ef"]
+      },
+      "cat-ats": {
+        "role": "secondary",
+        "displayName": "ATS Blue",
+        "canonical": "#2563eb",
+        "tonalRamp": ["#0b1f52", "#133a8f", "#1d55c4", "#2563eb", "#5085f2", "#86aaf7", "#bcd2fb", "#eaf1fe"]
+      },
+      "cat-impact": {
+        "role": "secondary",
+        "displayName": "Impact Violet",
+        "canonical": "#7c3aed",
+        "tonalRamp": ["#2a1055", "#431f8f", "#5c2bc4", "#7c3aed", "#9a67f2", "#b795f7", "#d6c2fb", "#f0e9fe"]
+      },
+      "cat-structure": {
+        "role": "secondary",
+        "displayName": "Structure Cyan",
+        "canonical": "#0891b2",
+        "tonalRamp": ["#03303f", "#045a6f", "#067a96", "#0891b2", "#22aed0", "#5cc9e6", "#a3e0f2", "#e2f5fb"]
+      },
+      "cat-keywords": {
+        "role": "secondary",
+        "displayName": "Keywords Amber",
+        "canonical": "#d97706",
+        "tonalRamp": ["#3f2003", "#6b3704", "#9c5105", "#d97706", "#f0942b", "#f6b463", "#fad4a3", "#fdeed6"]
+      },
+      "cat-readability": {
+        "role": "secondary",
+        "displayName": "Readability Green",
+        "canonical": "#16a34a",
+        "tonalRamp": ["#053a1a", "#0a5f2c", "#10833d", "#16a34a", "#2fc267", "#66d492", "#a6e5bf", "#e2f6ea"]
+      },
+      "cat-formatting": {
+        "role": "secondary",
+        "displayName": "Formatting Pink",
+        "canonical": "#db2777",
+        "tonalRamp": ["#4d0a29", "#7d1145", "#a81a5e", "#db2777", "#ea4f93", "#f082b4", "#f6b8d4", "#fdeaf3"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Landing headline only; the largest voice on any surface." },
+      "headline": { "displayName": "Headline", "purpose": "Page titles and section headings." },
+      "body": { "displayName": "Body", "purpose": "Prose, rationale, and findings; max line length ~65ch." },
+      "label": { "displayName": "Label / Mono", "purpose": "Field labels, tags, table headers, and every measurement." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "decode", "value": "cubic-bezier(0.2, 0.7, 0.2, 1)", "purpose": "Signature moment: parsed fields and list rows reveal with a short stagger. 0.5s, staggered 55-70ms. Disabled under prefers-reduced-motion." },
+      { "name": "rise", "value": "cubic-bezier(0.2, 0.7, 0.2, 1)", "purpose": "Page transition: each route fades and lifts 10px on mount. 0.45s." },
+      { "name": "grow", "value": "cubic-bezier(0.2, 0.7, 0.2, 1)", "purpose": "Meters grow from the origin when they mount, then track value changes via transform. 0.8s." },
+      { "name": "count-up", "value": "cubic-bezier(0.2, 0.7, 0.2, 1)", "purpose": "Score numerals count up over 0.75s on mount. Reduced-motion jumps straight to the value." },
+      { "name": "shimmer", "value": "linear", "purpose": "Colored loading skeleton sweep while an analysis runs. 1.4s." },
+      { "name": "pulse-border", "value": "ease-in-out", "purpose": "Dropzone border pulses to the mark while a file is dragged over it. 0.9s." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action, e.g. 'Analyze my resume' or 'Run the review'.",
+      "html": "<button class=\"ds-btn-primary\">RUN THE REVIEW</button>",
+      "css": ".ds-btn-primary { background: var(--color-mark, #c9f24a); color: var(--color-mark-ink, #10130a); border: 1px solid var(--color-mark, #c9f24a); border-radius: 2px; height: 40px; padding: 0 16px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: filter 0.15s ease, outline-color 0.15s ease; } .ds-btn-primary:hover { filter: brightness(0.95); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-ink, #0e1113); outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary actions such as Print or Open; boundary darkens on hover.",
+      "html": "<button class=\"ds-btn-outline\">PRINT</button>",
+      "css": ".ds-btn-outline { background: var(--color-surface, #fff); color: var(--color-ink, #0e1113); border: 1px solid var(--color-rule-strong, #a9b0a8); border-radius: 2px; height: 40px; padding: 0 16px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: border-color 0.15s ease; } .ds-btn-outline:hover { border-color: var(--color-ink, #0e1113); } .ds-btn-outline:focus-visible { outline: 2px solid var(--color-ink, #0e1113); outline-offset: 2px; }"
+    },
+    {
+      "name": "Tag",
+      "kind": "chip",
+      "refersTo": "tag-neutral",
+      "description": "Bracketed-feeling mono label for state, skills, and keyword gaps.",
+      "html": "<span class=\"ds-tag\">TYPESCRIPT</span>",
+      "css": ".ds-tag { display: inline-flex; align-items: center; border: 1px solid var(--color-rule-strong, #a9b0a8); border-radius: 2px; padding: 2px 6px; background: var(--color-surface, #fff); color: var(--color-ink-soft, #3c4247); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.66rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Square-ish field with a monospace value and an uppercase mono label above.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">MODEL</span><input class=\"ds-input\" value=\"gpt-4o-mini\" /></label>",
+      "css": ".ds-field { display: block; } .ds-field-label { display: block; margin-bottom: 6px; color: var(--color-muted, #6b7176); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; } .ds-input { width: 100%; box-sizing: border-box; background: var(--color-surface, #fff); color: var(--color-ink, #0e1113); border: 1px solid var(--color-rule, #d3d7d1); border-radius: 2px; padding: 10px 12px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.875rem; outline: none; transition: border-color 0.15s ease; } .ds-input:focus { border-color: var(--color-ink, #0e1113); }"
+    },
+    {
+      "name": "Panel (Sheet)",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "The structural container: a bordered sheet with a ruled header, never a floating card.",
+      "html": "<div class=\"ds-panel\"><div class=\"ds-panel-head\">SCORED DIMENSIONS</div><div class=\"ds-panel-body\">Content sits on ruled rows.</div></div>",
+      "css": ".ds-panel { border: 1px solid var(--color-rule, #d3d7d1); border-radius: 0; background: var(--color-surface, #fff); } .ds-panel-head { display: flex; justify-content: space-between; padding: 10px 16px; border-bottom: 1px solid var(--color-rule, #d3d7d1); color: var(--color-ink-soft, #3c4247); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; } .ds-panel-body { padding: 16px; color: var(--color-ink-soft, #3c4247); font-family: 'Archivo', system-ui, sans-serif; font-size: 0.9rem; line-height: 1.6; }"
+    },
+    {
+      "name": "Parse Row",
+      "kind": "custom",
+      "refersTo": "parse-row",
+      "description": "Signature: LABEL — dotted rule — VALUE, the literal shape of a machine extracting fields.",
+      "html": "<div class=\"ds-parse-row\"><span class=\"ds-parse-label\">QUANTIFIED RESULTS</span><span class=\"ds-parse-rule\"></span><span class=\"ds-parse-value\">0 found</span></div>",
+      "css": ".ds-parse-row { display: flex; align-items: center; gap: 12px; padding: 10px 16px; border-top: 1px solid var(--color-rule, #d3d7d1); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; } .ds-parse-label { color: var(--color-ink-soft, #3c4247); } .ds-parse-rule { flex: 1; height: 1px; background: var(--color-rule, #d3d7d1); } .ds-parse-value { color: var(--color-fail, #cf3218); }"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Uppercase mono link whose active state is a 2px highlighter underline.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link ds-nav-active\" href=\"#\">ANALYZE</a><a class=\"ds-nav-link\" href=\"#\">HISTORY</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 4px; } .ds-nav-link { border-bottom: 2px solid transparent; padding: 6px 12px; color: var(--color-muted, #6b7176); font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; transition: color 0.15s ease; } .ds-nav-link:hover { color: var(--color-ink, #0e1113); } .ds-nav-active { border-bottom-color: var(--color-mark, #c9f24a); color: var(--color-ink, #0e1113); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Parse Sheet",
+    "overview": "Resume Analyzer looks like the machine's own readout. An applicant tracking system does not read a resume the way a person does — it flattens it into fields — and this interface adopts exactly that flat, ruled, measured view rather than dressing it up as a friendly dashboard. The product's whole claim is a calibrated, honest screen, so the surface is a working sheet: hairline rules, fixed columns, monospace field labels, tabular numerals, and square corners. Density is the point, not a cost.\n\nThe palette is cool and instrumental. A near-black ink sits on a cool off-white ground, and a single highlighter-lime mark is the only committed accent — used for marked emphasis and the primary action, always carrying black text. Nothing is decorated to look impressive; every rule, tick, and meter is doing measurement work. Depth is expressed with hairlines and a single filled field tone, never with shadow or gloss.\n\nThe tone is technical but not cold-by-default: generous vertical rhythm, plain-language verdicts, and a fix queue that reads as instructions rather than a scoreboard. The one authored moment is a short decode reveal when parsed fields appear, echoing a machine resolving text into rows.",
+    "keyCharacteristics": [
+      "Ruled sheets with hairline separators instead of floating rounded cards.",
+      "Monospace for every field label, tag, and measurement; Archivo for headings and running text.",
+      "One highlighter accent on black; state colors (pass/warn/fail) reserved for meaning.",
+      "Linear ticked meters and large tabular numerals, never progress rings.",
+      "Flat by construction: no shadows, no gradients, no pill shapes."
+    ],
+    "rules": [
+      { "name": "The One Mark Rule", "body": "The highlighter accent is the only chromatic accent in the system. It covers a small fraction of any screen and carries black text without exception; it never becomes a large colored field.", "section": "colors" },
+      { "name": "The State-Color Rule", "body": "Pass, warn, and fail are semantic only. They are never used for decoration, brand, or emphasis, and their soft tints appear only as notification grounds.", "section": "colors" },
+      { "name": "The Label Rule", "body": "Anything monospace and uppercase is a label or a measurement. Prose never sets in monospace, and labels never set in Archivo.", "section": "typography" },
+      { "name": "The Tabular Rule", "body": "Every number that can be compared vertically (scores, dates) uses tabular figures.", "section": "typography" },
+      { "name": "The Flat Rule", "body": "No box-shadow anywhere, including hover and focus. State is shown with border color, border weight, and fill — never with elevation.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do separate content with 1px Rule hairlines and full-width rows.",
+      "Do set every label, tag, and measurement in monospace uppercase with tabular figures.",
+      "Do reserve the highlighter mark for the primary action and marked emphasis, always with black text.",
+      "Do keep corners at 0px for sheets and 2px for controls.",
+      "Do express state with border and fill, and keep the surface flat."
+    ],
+    "donts": [
+      "Don't use box-shadow or any elevation to imply depth.",
+      "Don't use rounded pills, capsules, or large radii.",
+      "Don't use gradients, glass, or blur as decoration.",
+      "Don't use the highlighter mark as body text or as a large background field.",
+      "Don't use pass/warn/fail colors for anything but state, and never as a left/right border accent.",
+      "Don't set running prose in monospace or labels in Archivo.",
+      "Don't ship a card grid of icon + heading + text as page structure."
+    ]
+  }
+}
